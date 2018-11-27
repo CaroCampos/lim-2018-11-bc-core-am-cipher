@@ -1,8 +1,9 @@
-let text = '';
+let string = '';
 let offset =  '';
 
 const btnCipher = document.getElementById('btn-cipher');
 const btnDecipher = document.getElementById('btn-decipher');
+const btnEnter = document.getElementById('btn-enter')
 const resultMessage = document.getElementById('result-message');
 
 let resultLetter = '';
@@ -10,35 +11,35 @@ let resultLetter = '';
 //////////////
 
 const cipher = () => {
-  text = document.getElementById('text').value;
+  string = document.getElementById('text').value;
   offset = parseInt(document.getElementById('offset-position').value)%26;
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] === ' ') {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === ' ') {
       resultLetter += ' ';
     } else {
-        const asciiLetter = (text.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
+        const asciiLetter = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
         const letterCipher = String.fromCharCode(asciiLetter);
         resultLetter += letterCipher;
     }
-  }
+  } 
   return resultLetter;
 };
 
 btnCipher.addEventListener('click', () => {
-  text = document.getElementById('text').value;
-  resultMessage.innerHTML = cipher(text);
+  string = document.getElementById('text').value;
+  resultMessage.innerHTML = cipher(string);
 });
 
 /////////////
 
 const decipher = () => {
-  text = document.getElementById('text').value;
+  string = document.getElementById('text').value;
   offset = parseInt(document.getElementById('offset-position').value)%26;
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] === ' ') {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === ' ') {
       resultLetter += ' ';
     } else {
-        const asciiLetter = (text.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
+        const asciiLetter = (string.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
         const letterCipher = String.fromCharCode(asciiLetter);
         resultLetter += letterCipher;
     }
@@ -47,6 +48,11 @@ const decipher = () => {
 };
 
 btnDecipher.addEventListener('click', () => {
-  text = document.getElementById('text').value;
-  resultMessage.innerHTML = decipher(text);
+  string = document.getElementById('text').value;
+  resultMessage.innerHTML = decipher(string);
+});
+
+btnEnter.addEventListener('click', () => {
+  document.getElementById('section2').style.display = 'block';
+  document.getElementById('section1').style.display = 'none';
 });

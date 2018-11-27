@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Cipher/Decipher</title>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
-    <div class="container">
-      <h1>Cifrado César</h1>
-      <form>
-        <div>
-          <label for="text">Escribe texto</label>
-          <input type="text" id="text">
+    <div class="container-fluid">
+      <section id="section1">
+        <div class="row col-md-offset-3 col-md-6">
+          <h1 class="col-md-12">encrypt</h1>
         </div>
-        <div>
-          <label for="offset-position" >Ingresa clave</label>
-          <input type="number" id="offset-position">
+        <div class="row home col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+          <p class="intro">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+          </p>
+        </div> 
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+          <button type="button" id="btn-enter">Entrar</button>
+        </div>     
+      </section>
+
+      <section id="section2">
+        <header class="row header">
+          <div class="col-md-offset-3 col-md-6">
+            <img src="img/logo.png">
+          </div>
+        </header> 
+        <div class="row formulario col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+          <form>
+            <div>
+              <input placeholder="Escribe texto" type="text" id="text">
+            </div>
+            <div>
+              <input placeholder="Ingresa clave" type="number" id="offset-position">
+            </div>
+          </form>
+          <button type="button" id="btn-cipher">Cifrar</button>
+          <button type="button" id="btn-decipher">Descifrar</button>
+          <button type="button" id="btn-clean">Limpiar</button>
+          <button type="button" id="btn-return">Volver</button>
+          <div>
+            <textarea id="result-message"></textarea>
+          </div>
         </div>
-      </form>
-      <button type="button" id="btn-cipher">Cifrar</button>
-      <button type="button" id="btn-decipher">Descifrar</button>
-      <div>
-        <textarea id="result-message"></textarea>
-      </div>
-    </div>
-    <script type="text/javascript" src="index.js"></script>
+      </section>
+    </div>   
+    <footer>
+      <p>Created by <b>Caro Campos</b></p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>     
   </body>
 </html>
