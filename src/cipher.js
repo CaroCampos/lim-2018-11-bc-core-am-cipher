@@ -24,9 +24,3 @@ window.cipher = {
 		return resultLetter;
 	}
 };
-
-
-
-
-
-
