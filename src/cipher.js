@@ -1,37 +1,34 @@
-const cipher = () => {
-  string = document.getElementById('text').value;
-  offset = parseInt(document.getElementById('offset-position').value)%26;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === ' ') {
-      resultLetter += ' ';
-    } else {
-        const asciiLetter = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
-        const letterCipher = String.fromCharCode(asciiLetter);
-        resultLetter += letterCipher;
-    }
-  } 
-  return resultLetter;
-};
-
-//////////////
-
-const decipher = () => {
-  string = document.getElementById('text').value;
-  offset = parseInt(document.getElementById('offset-position').value)%26;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === ' ') {
-      resultLetter += ' ';
-    } else {
-        const asciiLetter = (string.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
-        const letterCipher = String.fromCharCode(asciiLetter);
-        resultLetter += letterCipher;
-    }
-  }
-  return resultLetter;
-};
-
-
 window.cipher = {
-  encode: cipher,
-  decode: decipher
+	encode: (string, offset) => {
+		let resultLetter = '';
+		for (let i = 0; i < string.length; i++) {
+			let asciiLetter = string.toUpperCase().charCodeAt(i);
+		    if (asciiLetter === 32) {
+		      	resultLetter += ' ';
+		    } else { 
+		      resultLetter += String.fromCharCode((asciiLetter - 65 + offset) % 26 + 65);
+		    }
+		} 
+		return resultLetter;
+	},
+
+  	decode: (string, offset) => {
+  		let resultLetter = '';
+  		for (let i = 0; i < string.length; i++) {
+  			let asciiLetter = string.toUpperCase().charCodeAt(i);
+		    if (asciiLetter === 32) {
+		      	resultLetter += ' ';
+		    } else { 
+		      resultLetter += String.fromCharCode((asciiLetter + 65 - offset) % 26 + 65);
+		    }
+		} 
+		return resultLetter;
+	}
 };
+
+
+
+
+
+
+
