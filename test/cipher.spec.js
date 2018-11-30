@@ -14,6 +14,10 @@ describe('cipher', () => {
       assert.equal(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 33), "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
 
+    it('debería retornar " " para " " con offest 33', () => {
+      assert.equal(cipher.encode(" ", 33), " ");
+    });
+
   });
 
   describe('cipher.decode', () => {
@@ -24,6 +28,9 @@ describe('cipher', () => {
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offest 33', () => {
       assert.equal(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG", 33), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    });
+    it('debería retornar " " para " " con offest 33', () => {
+      assert.equal(cipher.decode(" ", 33), " ");
     });
   });
 

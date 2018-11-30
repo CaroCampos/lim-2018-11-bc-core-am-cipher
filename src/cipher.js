@@ -18,7 +18,7 @@ window.cipher = {
 			if (asciiLetter === 32) {
 				resultLetter += ' ';
 			} else {
-				resultLetter += String.fromCharCode((asciiLetter + 65 - offset) % 26 + 65);
+				resultLetter += String.fromCharCode((asciiLetter + 65 - (offset%26)) % 26 + 65);
 			}
 		}
 		return resultLetter;

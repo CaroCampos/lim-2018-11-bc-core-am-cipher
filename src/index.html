@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>Cipher/Decipher</title>
     <meta charset="utf-8">
@@ -7,52 +7,57 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
   <body>
     <div class="container-fluid">
-      <section id="section1">
+      <div id="section1">
         <div class="row col-md-offset-3 col-md-6">
           <h1 class="col-md-12">encrypt</h1>
         </div>
-        <div class="row home col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
-          <p class="intro">Prueba Encrypt con tus amigos y manda mensajes secretos
-          </p>
+        <div class="row home col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+          <p class="intro">¿Enviar un mensaje a alguien sin que nadie se entere?
+          Ya no tendrás que inventar la forma de esconderte.
+          Prueba encrypt con tus amigos y diviértete mandando mensajes secretos.</p>
         </div> 
-        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-offset-2 col-xs-8">
           <button type="button" id="btn-enter">Entrar</button>
         </div>     
-      </section>
+      </div>
 
-      <section id="section2">
+      <div id="section2">
         <header class="row header">
           <div class="col-md-offset-3 col-md-6">
-            <img src="img/logo.png">
+            <a href="#section1"><img src="img/logo.png" alt="logo de marca"></a>
           </div>
         </header> 
-        <div class="row formulario col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
-          <form>
-            <div>
-              <input placeholder="Escribe texto" type="text" id="text">
-            </div>
-            <div>
-              <input placeholder="Ingresa clave" type="number" id="offset-position">
-            </div>
-          </form>
-          <button type="button" id="btn-cipher">Cifrar</button>
-          <button type="button" id="btn-decipher">Descifrar</button>
-          <button type="button" id="btn-clean">Limpiar</button>
-          <button type="button" id="btn-return">Volver</button>
-          <div>
-            <textarea id="result-message"></textarea>
-          </div>
+        <div class="row formulario col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+            <form>
+              <div class="row title col-md-offset-3 col-md-6">
+                <h3 class="col-md-12">encrypt</h3>
+                <p>jsnvivnieuenvinvjnvcijdnvjvdb chjas xjkas xkjas xhj</p>
+              </div>
+              <div>
+                <textarea id="text">Escribe tu mensaje aquí</textarea>
+              </div>
+              <div>
+                <input type="number" id="offset-position" placeholder="Selecciona un número clave">
+              </div>
+              <div>
+                <button class="btn" type="button" id="btn-decipher">Descifrar</button>
+                <button class="btn" type="button" id="btn-cipher">Cifrar</button>
+              </div>
+              <div>
+                <textarea id="result-message"></textarea>
+              </div>
+            </form>
+            
+          
         </div>
-      </section>
+      </div>
     </div>   
     <footer>
-      <p>Created by <b>Caro Campos</b></p>
+      <p>Created by <span>Caro Campos</span></p>
     </footer>
     <script type="text/javascript" src="cipher.js"></script>
-    <script type="text/javascript" src="index.js"></script> 
-       
+    <script type="text/javascript" src="index.js"></script>     
   </body>
 </html>
