@@ -1,5 +1,5 @@
 window.cipher = {
-	encode:(string, offset) => {
+	encode:(offset, string) => {
 		let resultLetter = '';
 		for (let i = 0; i < string.length; i++) {
 			let asciiLetter = string.toUpperCase().charCodeAt(i);
@@ -11,7 +11,7 @@ window.cipher = {
 		}
 		return resultLetter;
 	},
-	decode:(string, offset) => {
+	decode:(offset, string) => {
 		let resultLetter = '';
 		for (let i = 0; i < string.length; i++) {
 			let asciiLetter = string.toUpperCase().charCodeAt(i);

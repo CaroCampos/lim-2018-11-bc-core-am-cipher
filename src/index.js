@@ -10,13 +10,13 @@ btnEnter.addEventListener('click', () => {
 btnCipher.addEventListener('click', () => {
 	const text = document.getElementById('text').value;
 	const position = parseInt(document.getElementById('offset-position').value);
-	const resultMessage = (cipher.encode(text, position));
+	const resultMessage = (cipher.encode(position, text));
 	document.getElementById('result-message').innerHTML = resultMessage;
 });
 
 btnDecipher.addEventListener('click', () => {
 	const text2 = document.getElementById('text').value;
 	const position2 = parseInt(document.getElementById('offset-position').value);
-	const resultMessage2 = (cipher.decode(text2, position2));
+	const resultMessage2 = (cipher.decode(position2, text2));
 	document.getElementById('result-message').innerHTML = resultMessage2;
 });
