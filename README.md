@@ -4,11 +4,11 @@
 
 ![pantalla](img/captura1.png)
 
-##Definición del producto:
+## Definición del producto:
 
 Encrypt-ciphertext es una aplicación web que permite a los usuarios poder mandar mensajes secretos. El objetivo es que jóvenes adolescentes puedan comunicarse de manera secreta y privada sin necesidad de ocultar su pantalla (desktop, tablet. mobile) a los demás.
 
-##¿Cómo usar Encrypt-ciphertext? 
+## ¿Cómo usar Encrypt-ciphertext? 
 
 1. Ingresa a: [Encrypt-ciphertext](https://carocampos.github.io/lim-2018-11-bc-core-am-cipher/src/)
 2. Ingresa el texto que deseas encriptar.
@@ -16,15 +16,15 @@ Encrypt-ciphertext es una aplicación web que permite a los usuarios poder manda
 4. Haz click en cifrar para encriptar tu mensaje y en descifrar para descubrir el mensaje encriptado.
 5. Compartir en redes sociales y whatsapp (por implementar)
 
-##Principales Usuarios:
+## Principales Usuarios:
 
 Encrypt-ciphertext está dirigido a jóvenes entre 14 a 17 años que buscan mantener sus conversaciones en total privacidad. Una reacción particular de esa edad es la timidez, la idea de que otra persona pueda leer sus conversaciones muchas veces los aterra e inclusive hasta puede llegar a ser un motivo de bullying entre sus amigos.
 
-##Atacar el problema:
+## Atacar el problema:
 
 La iniciativa de Encrypt-ciphertext es darles total privacidad y seguridad a estos jóvenes de que podránr enviar un mensaje sin que otra persona pueda leerlo. De esta manera sus mensajes quedarán completamente ocultos, ya que ellos y sus receptores serán los únicos que tendrán acceso a la clave del mensaje.
 
-##Interfaz de usuario
+## Interfaz de usuario
 
 La interfaz permite al usuario:
 - Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
