@@ -1,6 +1,7 @@
 const btnEnter = document.getElementById('btn-enter');
 const btnCipher = document.getElementById('btn-cipher');
 const btnDecipher = document.getElementById('btn-decipher');
+const btnClear = document.getElementById('btn-clear');
 
 btnEnter.addEventListener('click', () => {
 	document.getElementById('section2').style.display = 'block';
@@ -20,3 +21,8 @@ btnDecipher.addEventListener('click', () => {
 	const resultMessage2 = (cipher.decode(position2, text2));
 	document.getElementById('result-message').innerHTML = resultMessage2;
 });
+
+btnClear.addEventListener('click', () => {
+	document.getElementById('text-form').reset();
+});
+
