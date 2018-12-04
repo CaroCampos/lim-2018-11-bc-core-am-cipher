@@ -2,7 +2,7 @@
 
 ¿Quiéres enviar un mensaje sin que nadie se entere? Ya no tendrás que inventar mil formas de esconderte. Prueba Encrypt con tus amigos y diviértete mandando mensajes secretos.
 
-![pantalla](img/captura1.png)
+![pantalla](src/img/captura1.PNG)
 
 ## Definición del producto:
 
