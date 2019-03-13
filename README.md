@@ -10,7 +10,7 @@ Encrypt-text es una aplicación web que permite a los usuarios poder mandar mens
 
 ## ¿Cómo usar Encrypt-text? 
 
-1. Ingresa a: [Encrypt-text](https://carocampos.github.io/lim-2018-11-bc-core-am-cipher/src/)
+1. Ingresa a: [Encrypt-text](https://carocampossalazar.github.io/lim-2018-11-bc-core-am-cipher/src/)
 2. Ingresa el texto que deseas encriptar.
 3. Ingresa el número de posiciones a desplazar para encriptar tu mensaje
 4. Haz click en cifrar para encriptar tu mensaje y en descifrar para descubrir el mensaje encriptado.
